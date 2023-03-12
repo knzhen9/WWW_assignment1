@@ -1,13 +1,23 @@
 .header {
-    /* height: 400px; */
-    /* width: max-content; */
-    background-image: no-repeat url("image/Zootopia.png");
-    /* background: green; */
-    /* background-color: green; */
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url("image/Zootopia.png");
+    color: #ffffff;
 }
 
-body {
-    background-color: green;
+.title {
+    font-size: 50px;
+    font-family: serif;
 }
 
-/* .menu */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    background-color: #c1b5a4;
+    color: #80624F;
+}
