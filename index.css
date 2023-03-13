@@ -1,7 +1,7 @@
 .header {
     height: 400px;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     background-image: url("image/Zootopia.png");
     color: #ffffff;
 }
@@ -9,6 +9,8 @@
 .title {
     font-size: 50px;
     font-family: serif;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .menu {
