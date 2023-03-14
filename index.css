@@ -37,12 +37,11 @@
 .link-container:hover a {
     background-color: #c1b5a4;
     color: #80624F;
-    font-weight: bold;
 }
 
 .dropdown-container {
     position: relative;
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 .dropdown-btn {
@@ -79,7 +78,6 @@
 .dropdown-container:hover .dropdown-btn {
     background-color: #c1b5a4;
     color: #80624F;
-    font-weight: bold;
 }
 
 .dropdown-container:hover .dropdown-content {
@@ -92,7 +90,6 @@
     border-width: 1px;
     background-color: #c1b5a4;
     color: #80624F;
-    font-weight: bold;
 }
 
 .footer {
@@ -109,24 +106,37 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    justify-content: flex-start;
     align-items: center;
+    padding-bottom: 50px;
 }
 
-.typing_message {
+.typed-container {
+    display: inline-block;
     font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
     color: #80624F;
-    /* text-align: center; */
-    height: 1em;
 }
 
-.zoo-icon {
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(7);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.icon{
     height: 500px;
     width: 500px;
-}
-
-.zoo-icon img {
     border-radius: 50%;
-    max-height: 100%;
-    max-width: 100%;
+    box-shadow: 0 0 20px 10px #80624F;
 }
