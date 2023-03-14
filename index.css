@@ -159,9 +159,22 @@ th {
     border: 1px solid #000000;
 }
 
-td {
+.td-panda {
     border: 1px solid #000000;
     width: 390px;
+}
+
+.image-panda {
+    width: 390px;
+}
+
+.td-cat {
+    border: 1px solid #000000;
+    width: 550px;
+}
+
+.image-cat {
+    width: 260px;
 }
 
 td img {
